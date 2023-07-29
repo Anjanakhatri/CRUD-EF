@@ -1,0 +1,18 @@
+﻿@model WebNewDemo.Models.Employee
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<form asp-action="Edit" method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <br>
+    <label asp-for="salary"></label>
+    <input asp-for="salary" />
+    <span asp-validation-for="salary"></span>
+    <br>
+    <input type="submit" value="Submit" />
+</form>
+
